@@ -166,7 +166,7 @@ module tt_um_control_top_jhill0408 (
   // All output pins must be assigned. If not used, assign to 0.
 
   assign uio_oe  = 1'b1;
-
+    wire clk_bar, rst;
     assign clk_bar = ~clk;
     assign rst = ~rst_n;
 
